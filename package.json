@@ -1,0 +1,29 @@
+{
+  "name": "flyd-flatmap",
+  "version": "1.0.0",
+  "description": "flatMap for Flyd.",
+  "main": "flatmap.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paldepind/flyd-flatmap.git"
+  },
+  "keywords": [
+    "flyd",
+    "flatmap"
+  ],
+  "author": "Simon Friis Vindum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paldepind/flyd-flatmap/issues"
+  },
+  "homepage": "https://github.com/paldepind/flyd-flatmap",
+  "dependencies": {
+    "flyd": "0.0.3"
+  }
+}
