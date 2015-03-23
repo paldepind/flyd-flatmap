@@ -1,6 +1,6 @@
 {
   "name": "flyd-flatmap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "flatMap for Flyd.",
   "main": "flatmap.js",
   "directories": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/paldepind/flyd-flatmap",
   "dependencies": {
-    "flyd": "0.0.3"
+    "flyd": "0.0.4"
   }
 }

@@ -11,7 +11,7 @@ describe('flatMap', function() {
       return stream();
     }
     var s = stream();
-    flatMap(s, f);
+    flatMap(f, s);
     s(1)(2)(3)(4)(5);
     assert.deepEqual(result, [1, 2, 3, 4, 5]);
   });
@@ -25,9 +25,9 @@ describe('flatMap', function() {
       return s;
     }
     var s = stream();
-    flyd.map(flatMap(s, f), function(v) {
+    flyd.map(function(v) {
       result.push(v);
-    });
+    }, flatMap(f, s));
     s(1)(3)(5);
     setImmediate(function() {
       assert.deepEqual(result, [2, 3, 4,

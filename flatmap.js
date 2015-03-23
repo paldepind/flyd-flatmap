@@ -1,7 +1,7 @@
 var flyd = require('flyd');
 
-module.exports = function(s, f) {
+module.exports = function(f, s) {
   return flyd.stream([s], function(own) {
-    flyd.map(f(s.val), own);
+    flyd.map(own, f(s.val));
   });
 };
